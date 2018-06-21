@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:background="@color/Black"
+    tools:context="vn.com.ifca.defecttracking.Activities.LogInActivity">
+
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:layout_weight="0.5"></LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_marginTop="5pt"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:srcCompat="@drawable/logo1"></ImageView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="2"
+            android:background="@color/White"
+            android:inputType="textUri|textEmailAddress"
+            android:hint="   Username..."
+            android:textStyle="bold"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/White"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:saveEnabled="true"
+            android:textstyle="bold"
+            android:hint="   Password..."></EditText>
+
+        <TextView
+            android:id="@+id/under"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="@string/forgot"
+            android:textAlignment="center"
+            android:textColor="@color/White"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"></LinearLayout>
+</LinearLayout>
